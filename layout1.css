@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 0px;
+    background: #080808;
+  }
+  
+  /* Header */
+  .header {
+    padding: 80px;
+    text-align: center;
+    color: white;
+    background-image: url(mlg.jpg);
+
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* top navigation */
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: black;
+    padding-left: 20px;
+  
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgb(247, 135, 7);
+    padding: 45px;
+    margin-top: 20px;
+  }
+  .pembungkus {
+    background-color: rgb(247, 135, 7);
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+  }
+  h6{
+    position: absolute;
+    left: 40px;
+    top: 220px;
+    color: rgb(255, 255, 255);
+  }
+  a:link {
+    color: rgb(255, 255, 255);
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /* Responsive layout  */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+   
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
